@@ -28,18 +28,14 @@ System.register(['angular2/core', './courses.component', './authors.component'],
                 function AppComponent() {
                 }
                 AppComponent = __decorate([
-                    core_1.Component((_a = {
-                            selector: 'my-app',
-                            template: '<h1>Hello Angular!</h1><courses></courses>',
-                            directives: [courses_component_1.CoursesComponent]
-                        },
-                        _a[authors_component_1.AuthorsComponent] = ,
-                        _a
-                    )), 
+                    core_1.Component({
+                        selector: 'my-app',
+                        template: "<h1>Hello Angular!</h1>\n    \t\t   <courses></courses>\n    \t\t   <authors></authors>",
+                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent]
+                    }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
                 return AppComponent;
-                var _a;
             }());
             exports_1("AppComponent", AppComponent);
         }
